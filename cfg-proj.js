@@ -1,6 +1,3 @@
-function playSound(element) {
-
-}
 
 function goTo(){
 
