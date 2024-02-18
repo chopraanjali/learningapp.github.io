@@ -17,7 +17,7 @@
                 <input type="text" name="username" id="username" placeholder="Name">
             </form>
         </div>
-        <div class="age-group-nav">
+        <div class="nav age-group-nav">
             <button class="btn button-19 age-group group-baby">
                 <a href="#baby">0-3<i class="btn-icon fa-solid fa-baby"></i></a>
             </button>
@@ -42,8 +42,8 @@
             <div class="animal"><i onmouseover="PlaySound('horse')" onmouseout="StopSound('horse')"
                     class="fa-solid fa-horse"></i></div><audio hidden id="horse" src="mp3/horse.mp3"></audio>
         </div>
-        <div class="btn btn-home">
-            <button>
+        <div>
+            <button class="btn btn-home">
                 <a href="#landing">
                     <i class="fa fa-home" aria-hidden="true"></i>
                 </a>
@@ -52,76 +52,72 @@
     </div>
 
     <div id="toddler" class="page">
-        <div class="nav-toddler">
-            <div class="nav-alphabets">
-                <button class="btn">
+        <div class="nav toddler-nav">
+            <div class="alphabets-nav">
+                <button class="btn button-19">
                     <a href="#alphabets">ABC... </a>
                 </button>
             </div>
-            <div class="nav-numbers">
-                <button class="btn">
+            <div class="nav numbers-nav">
+                <button class="btn button-19">
                     <a href="#numbers">123...</a>
                 </button>
             </div>
-            <div class="letters-container">
-                <div class="letter">A</div><audio hidden id="a" src=""></audio>
-                <div class="letter">B</div><audio hidden id="b" src=""></audio>
-                <div class="letter">C</div><audio hidden id="c" src=""></audio>
-                <div class="letter">D</div><audio hidden id="d" src=""></audio>
-                <div class="letter">E</div><audio hidden id="e" src=""></audio>
-                <div class="letter">F</div><audio hidden id="f" src=""></audio>
-                <div class="letter">G</div><audio hidden id="g" src=""></audio>
-                <div class="letter">H</div><audio hidden id="h" src=""></audio>
-                <div class="letter">I</div><audio hidden id="i" src=""></audio>
-                <div class="letter">J</div><audio hidden id="j" src=""></audio>
-                <div class="letter">K</div><audio hidden id="k" src=""></audio>
-                <div class="letter">L</div><audio hidden id="l" src=""></audio>
-                <div class="letter">M</div><audio hidden id="m" src=""></audio>
-                <div class="letter">N</div><audio hidden id="n" src=""></audio>
-                <div class="letter">O</div><audio hidden id="o" src=""></audio>
-                <div class="letter">P</div><audio hidden id="p" src=""></audio>
-                <div class="letter">Q</div><audio hidden id="q" src=""></audio>
-                <div class="letter">R</div><audio hidden id="r" src=""></audio>
-                <div class="letter">S</div><audio hidden id="s" src=""></audio>
-                <div class="letter">T</div><audio hidden id="t" src=""></audio>
-                <div class="letter">U</div><audio hidden id="u" src=""></audio>
-                <div class="letter">V</div><audio hidden id="v" src=""></audio>
-                <div class="letter">W</div><audio hidden id="w" src=""></audio>
-                <div class="letter">X</div><audio hidden id="x" src=""></audio>
-                <div class="letter">Y</div><audio hidden id="y" src=""></audio>
-                <div class="letter">Z</div><audio hidden id="z" src=""></audio>
-            </div>
         </div>
+        <button class="btn btn-home">
+            <a href="#landing">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+        </button>
+    </div>
 
-        <div>
-            <button class="btn btn-home">
+
+    <div id="alphabets" class="page">
+        <div class="letters-container">
+            <div class="letter">A</div><audio hidden id="a" src=""></audio>
+            <div class="letter">B</div><audio hidden id="b" src=""></audio>
+            <div class="letter">C</div><audio hidden id="c" src=""></audio>
+            <div class="letter">D</div><audio hidden id="d" src=""></audio>
+            <div class="letter">E</div><audio hidden id="e" src=""></audio>
+            <div class="letter">F</div><audio hidden id="f" src=""></audio>
+            <div class="letter">G</div><audio hidden id="g" src=""></audio>
+            <div class="letter">H</div><audio hidden id="h" src=""></audio>
+            <div class="letter">I</div><audio hidden id="i" src=""></audio>
+            <div class="letter">J</div><audio hidden id="j" src=""></audio>
+            <div class="letter">K</div><audio hidden id="k" src=""></audio>
+            <div class="letter">L</div><audio hidden id="l" src=""></audio>
+            <div class="letter">M</div><audio hidden id="m" src=""></audio>
+            <div class="letter">N</div><audio hidden id="n" src=""></audio>
+            <div class="letter">O</div><audio hidden id="o" src=""></audio>
+            <div class="letter">P</div><audio hidden id="p" src=""></audio>
+            <div class="letter">Q</div><audio hidden id="q" src=""></audio>
+            <div class="letter">R</div><audio hidden id="r" src=""></audio>
+            <div class="letter">S</div><audio hidden id="s" src=""></audio>
+            <div class="letter">T</div><audio hidden id="t" src=""></audio>
+            <div class="letter">U</div><audio hidden id="u" src=""></audio>
+            <div class="letter">V</div><audio hidden id="v" src=""></audio>
+            <div class="letter">W</div><audio hidden id="w" src=""></audio>
+            <div class="letter">X</div><audio hidden id="x" src=""></audio>
+            <div class="letter">Y</div><audio hidden id="y" src=""></audio>
+            <div class="letter">Z</div><audio hidden id="z" src=""></audio>
+        </div>
+        <div class="btn btn-home">
+            <button>
                 <a href="#landing">
                     <i class="fa fa-home" aria-hidden="true"></i>
                 </a>
             </button>
         </div>
+    </div>
+    <div id="numbers" class="page">
 
-        <div id="alphabets">
+        <div class="btn btn-home">
+            <button>
+                <a href="#landing">
+                    <i class="fa fa-home" aria-hidden="true"></i>
 
-            <div class="btn btn-home">
-                <button>
-                    <a href="#landing">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-
-                    </a>
-                </button>
-            </div>
-        </div>
-        <div id="numbers">
-
-            <div class="btn btn-home">
-                <button>
-                    <a href="#landing">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-
-                    </a>
-                </button>
-            </div>
+                </a>
+            </button>
         </div>
     </div>
     <script src="cfg-proj.js" async defer></script>
