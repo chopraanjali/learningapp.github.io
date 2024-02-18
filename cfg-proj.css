@@ -111,7 +111,15 @@ small {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: auto;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #32292c;
+}
+
+#baby {
+  height: 100vh;
+  width: 100vw;
 }
 
 /****** BUTTONS ******/
@@ -215,17 +223,20 @@ a {
 /* ******************************** */
 
 .animal-container {
+  height: 100vh;
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: var(--background);
   padding: 10px;
+  /* align-items: center;
+  justify-items: center; */
 }
 
 .animal {
   background-color: var(--background);
   border: 1px solid var(--background);
   padding: 20px;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
 }
 
