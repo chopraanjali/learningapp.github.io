@@ -4,7 +4,7 @@ function setAccessibility() {}
 
 function toggleMute() {}
 
-animals = document.getElementsByClassName("animal");
+const animals = document.getElementsByClassName("animal");
 for (let i = 0; i < animals.length; i++) {
   animals[i].addEventListener("mouseover", () => {
     animals[i].classList.add("makeBigger");
