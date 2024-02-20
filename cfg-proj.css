@@ -262,6 +262,19 @@ a {
   justify-items: center; */
 }
 
+.numbers-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: var(--background);
+  padding: 10px;
+   align-items: center;
+  justify-items: center;
+  color: var(--secondary);
+  font-size: 50px;
+  font-weight: bold;
+}
+
 .animal {
   background-color: var(--background);
   border: 1px solid var(--background);
@@ -269,6 +282,7 @@ a {
   font-size: 50px;
   text-align: center;
 }
+
 
 .animal>i {
   font-size: 120px;
