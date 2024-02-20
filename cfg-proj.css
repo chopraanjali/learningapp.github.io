@@ -241,7 +241,7 @@ a {
 .letters-container {
   height: 100vh;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   background-color: var(--background);
   padding: 10px;
    align-items: center;
