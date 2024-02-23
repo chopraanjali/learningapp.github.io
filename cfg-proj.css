@@ -244,12 +244,19 @@ a {
   grid-template-columns: auto auto auto auto auto;
   background-color: var(--background);
   padding: 10px;
-   align-items: center;
+  align-items: center;
   justify-items: center;
   color: var(--primary);
   font-size: 50px;
   font-weight: bold;
-  
+}
+
+.letter {
+  transition: 1s font-size;
+}
+
+.number {
+  transition: 1s font-size;
 }
 
 .animal-container {
@@ -258,8 +265,8 @@ a {
   grid-template-columns: auto auto auto;
   background-color: var(--background);
   padding: 10px;
-  /* align-items: center;
-  justify-items: center; */
+  align-items: center;
+  justify-items: center;
 }
 
 .numbers-container {
@@ -268,7 +275,7 @@ a {
   grid-template-columns: auto auto auto auto auto;
   background-color: var(--background);
   padding: 10px;
-   align-items: center;
+  align-items: center;
   justify-items: center;
   color: var(--secondary);
   font-size: 50px;
@@ -278,18 +285,14 @@ a {
 .animal {
   background-color: var(--background);
   border: 1px solid var(--background);
-  padding: 110px 20px;
+  padding: 80px 20px;
   font-size: 50px;
   text-align: center;
-}
-
-
-.animal>i {
   font-size: 120px;
   color: var(--secondary);
-  transition: 1s all;
+  transition: 1s font-size;
 }
 
-.makeBigger>i {
+.makeBigger {
   font-size: 180px;
 }
