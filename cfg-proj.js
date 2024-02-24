@@ -1,15 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const letterElements = document.getElementsByClassName('letter');
-  const numberElements = document.getElementsByClassName('number');
-  letterElements.forEach(element => {
-    hoverAction(element);
-  });
-  numberElements.forEach(element => {
-    hoverAction(element);
-  });
-  
-});
-
 const animals = document.getElementsByClassName("animal");
 const letters = document.getElementsByClassName("letter");
 const numbers = document.getElementsByClassName("number");
@@ -43,7 +31,12 @@ function StopSound(soundobj) {
 }
 
 function hoverAction(element) {
-  var currentElement = element.innerHTML.toLowerCase();
+  
+  var currentElement = element.innerHTML;
+  if (typeof currentElement === "string") {
+    currentElement = currentElement.toLowerCase();
+  }
+
   
   element.addEventListener("mouseover", function() {
     PlaySound(currentElement);
@@ -54,4 +47,9 @@ function hoverAction(element) {
   });
 }
 
+var lettersArray = Array.from(letters);
+lettersArray.forEach(hoverAction);
 
+var numbersArray = Array.from(numbers);
+
+numbersArray.forEach(hoverAction);
