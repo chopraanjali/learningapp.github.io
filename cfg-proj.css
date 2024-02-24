@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
+
 /* Color scheme */
 :root {
   --text: #32292c;
@@ -6,8 +8,6 @@
   --secondary: #97ea9c;
   --accent: #a4f6f5;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
 
 * {
   margin: 0%;
