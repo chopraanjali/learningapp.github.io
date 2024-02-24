@@ -11,16 +11,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 const animals = document.getElementsByClassName("animal");
+const letters = document.getElementsByClassName("letter");
+const numbers = document.getElementsByClassName("number");
 
-for (let i = 0; i < animals.length; i++) {
-  animals[i].addEventListener("mouseover", () => {
-    animals[i].classList.add("makeBigger");
-  });
-
-  animals[i].addEventListener("mouseout", () => {
-    animals[i].classList.remove("makeBigger");
-  });
+function zoomInAndOut(element) {
+  for (let i = 0; i < element.length; i++) {
+    element[i].addEventListener("mouseover", () => {
+      element[i].classList.add("makeBigger");
+    });
+    element[i].addEventListener("mouseout", () => {
+      element[i].classList.remove("makeBigger");
+    });
+  }
 }
+
+zoomInAndOut(animals);
+zoomInAndOut(letters);
+zoomInAndOut(numbers);
 
 function buttonClick() {}
 
