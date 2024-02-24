@@ -238,25 +238,7 @@ a {
   cursor: pointer;
 
   i {
-    padding: 0px 6.5px;
-  }
-}
-
-.btn-unmute {
-  z-index: 999999;
-  position: fixed;
-  right: 30px;
-  bottom: 105px;
-  height: 60px;
-  width: 60px;
-  border-width: 3px;
-  border-radius: 50%;
-  font-size: 28.48px;
-  color: white;
-  cursor: pointer;
-
-  i {
-    padding: 0px 6.5px;
+    padding: 0px 6px;
   }
 }
 
