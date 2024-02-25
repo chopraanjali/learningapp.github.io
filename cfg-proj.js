@@ -1,4 +1,9 @@
 // Function to mute and unmute the audio for a better user experience
+window.onload = function() {
+  navigateTo('landing');
+};
+
+
 function toggleMute() {
   let sounds = document.querySelectorAll("audio");
   muteButton.children[0].classList.toggle("fa-volume-xmark");
@@ -62,21 +67,19 @@ lettersArray.forEach(hoverAction);
 var numbersArray = Array.from(numbers);
 numbersArray.forEach(hoverAction);
 
-function saveUserInput() {
+// function saveUserInput() {
 
-  const form=getElementById("user-form");
+//   const form=getElementById("user-form");
 
-  const usernameInput = form.getElementById('username');
+//   const usernameInput = form.getElementById('username');
 
-  const username = usernameInput.value;
+//   const username = usernameInput.value;
 
-  localStorage.setItem('username', username);
+//   localStorage.setItem('username', username);
 
+//   document.title= "Hi " + localStorage.getItem('username');
 
-
-  document.title= "Hi " + localStorage.getItem('username');
-
-}
+// }
 
 // Function to navigate between pages
 function navigateTo(pageId) {
@@ -92,11 +95,3 @@ function navigateTo(pageId) {
       targetPage.classList.add('display');
   }
 }
-
-// Initially show the landing page
-window.onload = function() {
-  navigateTo('landing');
-};
-
-
-

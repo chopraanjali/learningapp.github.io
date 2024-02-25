@@ -196,6 +196,8 @@ small {
   width: 180px;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 a {
@@ -241,21 +243,6 @@ a {
   i {
     padding: 0px 6px;
   }
-}
-
-.submit {
-  z-index: 999999;
-  position: fixed;
-  right: 30px;
-  bottom: 180px;
-  height: 60px;
-  width: 60px;
-  border-width: 3px;
-  border-radius: 50%;
-  font-size: 28.48px;
-  color: white;
-  cursor: pointer;
-  align-self: center;
 }
 
 .toddler-nav {
