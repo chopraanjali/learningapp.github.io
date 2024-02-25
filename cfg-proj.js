@@ -61,3 +61,42 @@ lettersArray.forEach(hoverAction);
 
 var numbersArray = Array.from(numbers);
 numbersArray.forEach(hoverAction);
+
+function saveUserInput() {
+
+  const form=getElementById("user-form");
+
+  const usernameInput = form.getElementById('username');
+
+  const username = usernameInput.value;
+
+  localStorage.setItem('username', username);
+
+
+
+  document.title= "Hi " + localStorage.getItem('username');
+
+}
+
+// Function to navigate between pages
+function navigateTo(pageId) {
+  // Hide all pages
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(page => {
+      page.classList.remove('display');
+  });
+
+  // Show the target page
+  const targetPage = document.getElementById(pageId);
+  if (targetPage) {
+      targetPage.classList.add('display');
+  }
+}
+
+// Initially show the landing page
+window.onload = function() {
+  navigateTo('landing');
+};
+
+
+

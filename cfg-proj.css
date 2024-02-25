@@ -134,7 +134,7 @@ small {
   border-radius: 20px;
   border-width: 0 7px 14px 0;
   box-sizing: border-box;
-  color: var(--text);
+  color: var(--background);
   cursor: pointer;
   display: inline-block;
   font-family: Poppins, sans-serif;
@@ -243,6 +243,21 @@ a {
   }
 }
 
+.submit {
+  z-index: 999999;
+  position: fixed;
+  right: 30px;
+  bottom: 180px;
+  height: 60px;
+  width: 60px;
+  border-width: 3px;
+  border-radius: 50%;
+  font-size: 28.48px;
+  color: white;
+  cursor: pointer;
+  align-self: center;
+}
+
 .toddler-nav {
   width: 300px;
 
@@ -325,4 +340,12 @@ div>.page-container {
 
 div>.page {
   scroll-snap-align: start;
+}
+
+.page {
+  display: none;
+}
+
+.page.display {
+  display: block;
 }

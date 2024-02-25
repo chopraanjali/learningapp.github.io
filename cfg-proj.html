@@ -9,24 +9,26 @@
 </head>
 
 <body>
-    <div class="page-container">
-        <div id="landing" class="page">
-            <h1>Welcome, Kids!</h1>
-            <div class="user-form">
-                <form id="user-form">
-                    <input type="text" name="username" id="username" placeholder="Name">
-                </form>
-            </div>
-            <div class="nav age-group-nav">
-                <button class="btn button-19 age-group group-baby">
-                    <a href="#baby">0-3<i class="btn-icon fa-solid fa-baby"></i></a>
-                </button>
-                <button class="btn button-19 age-group group-toddler">
-                    <a href="#toddler">4-8<i class="btn-icon fa-solid fa-child-reaching"></i></a>
-                </button>
-            </div>
+    <div id="landing" class="page">
+        <h1>Welcome, Kids!</h1>
+        <div class="user-form">
+            <form id="user-form">
+                <input type="text" name="username" id="username" placeholder="Name">
+                
+            </form>
         </div>
-
+        <div class="nav age-group-nav">
+            <a href="#baby"><button onclick="navigateTo('baby')" class="btn button-19 age-group group-baby">
+               0-3<i class="btn-icon fa-solid fa-baby"></i>
+            </button>
+        </a>
+            <a href="#toddler"><button onclick="navigateTo('toddler')" class="btn button-19 age-group group-toddler">
+                4-8<i class="btn-icon fa-solid fa-child-reaching"></i>
+            </button>
+            </a>
+        </div>
+    </div>
+  
         <div id="baby" class="page">
             <div class="animal-container">
                 <div><i onmouseover="PlaySound('cow')" onmouseout="StopSound('cow')" class="animal fa-solid fa-cow"></i>
@@ -44,31 +46,41 @@
                 <div><i onmouseover="PlaySound('horse')" onmouseout="StopSound('horse')"
                         class="animal fa-solid fa-horse"></i>
                 </div><audio hidden id="horse" src="mp3/horse.mp3"></audio>
-            </div>
-            <div>
-                <button class="btn btn-mute">
-                    <i class="fa fa-volume-high fa-volume-xmark" aria-hidden="true"></i>
-                </button>
-                <button class="btn btn-home">
-                    <a href="#landing">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                    </a>
-                </button>
+                <div>
+                    <button class="btn btn-mute">
+                        <i class="fa fa-volume-high fa-volume-xmark" aria-hidden="true"></i>
+                    </button>
+                    <button onclick="navigateTo('landing')" class="btn btn-home">
+                        <a href="#landing">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                    </button>
+                </div>
             </div>
         </div>
 
         <div id="toddler" class="page">
             <div class="nav toddler-nav">
                 <div class="alphabets-nav">
-                    <button class="btn button-19">
+                    <button onclick="navigateTo('alphabets')" class="btn button-19">
                         <a href="#alphabets">ABC... </a>
                     </button>
                 </div>
                 <div class="nav numbers-nav">
-                    <button class="btn button-19">
+                    <button onclick="navigateTo('numbers')" class="btn button-19">
                         <a href="#numbers">123...</a>
                     </button>
                 </div>
+            </div>
+            <div>
+                <button class="btn btn-mute">
+                    <i class="fa fa-volume-high fa-volume-xmark" aria-hidden="true"></i>
+                </button>
+                <button onclick="navigateTo('landing')" class="btn btn-home">
+                    <a href="#landing">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                </button>
             </div>
         </div>
 
@@ -102,6 +114,16 @@
                 <div class="letter">Y</div><audio hidden id="y" src="mp3/y (1).mp3"></audio>
                 <div class="letter">Z</div><audio hidden id="z" src="mp3/z (1).mp3"></audio>
             </div>
+            <div>
+                <button class="btn btn-mute">
+                    <i class="fa fa-volume-high fa-volume-xmark" aria-hidden="true"></i>
+                </button>
+                <button onclick="navigateTo('landing')" class="btn btn-home">
+                    <a href="#landing">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                </button>
+            </div>
         </div>
         <div id="numbers" class="page">
             <div class="numbers-container">
@@ -125,6 +147,16 @@
                 <div class="number">18</div><audio hidden id="18" src="mp3/18.wav"></audio>
                 <div class="number">19</div><audio hidden id="19" src="mp3/19.wav"></audio>
                 <div class="number">20</div><audio hidden id="20" src="mp3/20.wav"></audio>
+            </div>
+            <div>
+                <button class="btn btn-mute">
+                    <i class="fa fa-volume-high fa-volume-xmark" aria-hidden="true"></i>
+                </button>
+                <button onclick="navigateTo('landing')" class="btn btn-home">
+                    <a href="#landing">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                </button>
             </div>
         </div>
     </div>
