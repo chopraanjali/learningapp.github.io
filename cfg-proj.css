@@ -21,6 +21,7 @@ body {
 
 html {
   font-size: 100%;
+  scroll-snap-type: y mandatory;
 }
 
 /****** HEADERS ******/
@@ -315,4 +316,13 @@ a {
 
 .makeBigger {
   font-size: 180px;
+}
+
+/* ********** Scroll snapping behaviour *********** */
+div>.page-container {
+  scroll-snap-type: y mandatory;
+}
+
+div>.page {
+  scroll-snap-align: start;
 }
