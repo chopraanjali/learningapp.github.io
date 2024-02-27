@@ -91,8 +91,14 @@ small {
 }
 
 .user-form {
-  min-height: 200px;
+  min-height: 150px;
   display: flex;
+  align-items: center;
+}
+
+.age-group-nav {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -248,9 +254,6 @@ a {
 .btn-save {
   display: inline-block;
   z-index: 999999;
-  /* position: fixed;
-  right: 30px;
-  bottom: 105px; */
   height: 60px;
   width: 60px;
   border-width: 3px;
@@ -274,7 +277,7 @@ a {
   }
 
   a {
-    padding-left: 85px;
+    padding-left: 65px;
   }
 }
 
