@@ -96,13 +96,13 @@ small {
   align-items: center;
 }
 
-#username-label {
+/* #username-label {
   font-size: xx-large;
   color: var(--primary);
   padding-right: 30px;
-}
+} */
 
-#username {
+#textInput {
   border-radius: 16px;
   font-size: x-large;
   height: 50px;
@@ -232,6 +232,25 @@ a {
   position: fixed;
   right: 30px;
   bottom: 105px;
+  height: 60px;
+  width: 60px;
+  border-width: 3px;
+  border-radius: 50%;
+  font-size: 28.48px;
+  color: white;
+  cursor: pointer;
+
+  i {
+    padding: 0px 6px;
+  }
+}
+
+.btn-save {
+  display: inline-block;
+  z-index: 999999;
+  /* position: fixed;
+  right: 30px;
+  bottom: 105px; */
   height: 60px;
   width: 60px;
   border-width: 3px;
