@@ -1,10 +1,6 @@
 // Function to mute and unmute the audio for a better user experience
-//const form= document.getElementById("user-form");
-
-
 window.onload = function() {
   navigateTo('landing');
-  
 };
 
 function toggleMute() {
@@ -78,16 +74,13 @@ function handleKeyPress() {
   var text = textInput.value;
   var username=text;
 
-  // pages.forEach(function(page) {
-  //       page.insertAdjacentHTML("afterbegin", "<h3>" + username + "</h3>");
-  // });
+//   const usernameInput = form.getElementById('username');
 
   const welcome = document.getElementById("welcome");
 
   welcome.innerHTML  = "Welcome " + username + "!";
-
   const saveButton = document.getElementById("save");
-  saveButton.style.display="none";
+  saveButton.display="none";
 
 }
 
