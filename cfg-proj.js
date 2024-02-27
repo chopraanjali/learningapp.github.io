@@ -68,17 +68,14 @@ numbersArray.forEach(hoverAction);
 
 function handleKeyPress() {
 
-  const pages = Array.from(document.body.querySelectorAll(".page"));
+  //const pages = Array.from(document.body.querySelectorAll(".page"));
 
   var textInput = document.getElementById("textInput");
-  var text = textInput.value;
-  var username=text;
-
-//   const usernameInput = form.getElementById('username');
+  var username = textInput.value;
 
   const welcome = document.getElementById("welcome");
 
-  welcome.innerHTML  = "Welcome " + username + "!";
+  welcome.innerText  = "Welcome " + username + "!";
   const saveButton = document.getElementById("save");
   saveButton.display="none";
 
