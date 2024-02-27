@@ -1,8 +1,11 @@
 // Function to mute and unmute the audio for a better user experience
+//const form= document.getElementById("user-form");
+
+
 window.onload = function() {
   navigateTo('landing');
+  
 };
-
 
 function toggleMute() {
   let sounds = document.querySelectorAll("audio");
@@ -67,19 +70,22 @@ lettersArray.forEach(hoverAction);
 var numbersArray = Array.from(numbers);
 numbersArray.forEach(hoverAction);
 
-// function saveUserInput() {
+function handleKeyPress() {
 
-//   const form=getElementById("user-form");
+  const pages = Array.from(document.body.querySelectorAll(".page"));
 
-//   const usernameInput = form.getElementById('username');
+  var textInput = document.getElementById("textInput");
+  var text = textInput.value;
+  var username=text;
 
-//   const username = usernameInput.value;
+  pages.forEach(function(page) {
+        page.insertAdjacentHTML("afterbegin", "<h3>" + username + "</h3>");
+  });
 
-//   localStorage.setItem('username', username);
+  const saveButton = document.getElementById("save");
+  saveButton.display="none";
 
-//   document.title= "Hi " + localStorage.getItem('username');
-
-// }
+}
 
 // Function to navigate between pages
 function navigateTo(pageId) {
