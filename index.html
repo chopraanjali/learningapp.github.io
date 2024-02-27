@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hi Kids!</title>
+    <script src="https://kit.fontawesome.com/7e4974aabd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cfg-proj.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <div id="landing" class="page">
+            <h1 id="welcome">Welcome, Kids!</h1>
+            <div class="user-form">
+                <form id="user-form">
+                    <input type="text" name="username" id="textInput" placeholder="Name">
+                    <button class="btn btn-save" id="save"><i class="fa fa-solid fa-arrow-right"
+                            aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div class="nav age-group-nav">
+                <a href="#baby"><button class="btn button-19 age-group group-baby">
+                        0-3<i class="btn-icon fa-solid fa-baby"></i>
+                    </button>
+                </a>
+                <a href="#toddler"><button class="btn button-19 age-group group-toddler">
+                        4-8<i class="btn-icon fa-solid fa-child-reaching"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="baby" class="page">
+            <div class="animal-container">
+                <div><i onmouseover="PlaySound('cow')" onmouseout="StopSound('cow')" class="animal fa-solid fa-cow"></i>
+                </div><audio hidden id="cow" src="mp3/cow.mp3"></audio>
+                <div><i onmouseover="PlaySound('cat')" onmouseout="StopSound('cat')" class="animal fa-solid fa-cat"></i>
+                </div><audio hidden id="cat" src="mp3/cat.mp3"></audio>
+                <div><i onmouseover="PlaySound('dog')" onmouseout="StopSound('dog')" class="animal fa-solid fa-dog"></i>
+                </div><audio hidden id="dog" src="mp3/dog.mp3"></audio>
+                <div><i onmouseover="PlaySound('frog')" onmouseout="StopSound('frog')"
+                        class="animal fa-solid fa-frog"></i>
+                </div><audio hidden id="frog" src="mp3/frog.mp3"></audio>
+                <div><i onmouseover="PlaySound('bird')" onmouseout="StopSound('bird')"
+                        class="animal fa-solid fa-dove"></i>
+                </div><audio hidden id="bird" src="mp3/bird.mp3"></audio>
+                <div><i onmouseover="PlaySound('horse')" onmouseout="StopSound('horse')"
+                        class="animal fa-solid fa-horse"></i>
+                </div><audio hidden id="horse" src="mp3/horse.mp3"></audio>
+                <div>
+                    <button class="btn btn-mute">
+                        <i class="fa fa-volume-high fa-volume-xmark" aria-hidden="true"></i>
+                    </button>
+                    <button class="btn btn-home">
+                        <a href="#landing">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="toddler" class="page">
+            <div class="nav toddler-nav">
+                <div class="alphabets-nav">
+                    <button class="btn button-19">
+                        <a href="#alphabets">ABC... </a>
+                    </button>
+                </div>
+                <div class="nav numbers-nav">
+                    <button class="btn button-19">
+                        <a href="#numbers">123...</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="alphabets" class="page">
+            <div class="letters-container">
+                <div class="letter">A</div><audio hidden id="a" src="mp3/a (1).mp3"></audio>
+                <div class="letter">B</div><audio hidden id="b" src="mp3/b (1).mp3"></audio>
+                <div class="letter">C</div><audio hidden id="c" src="mp3/c (1).mp3"></audio>
+                <div class="letter">D</div><audio hidden id="d" src="mp3/d (1).mp3"></audio>
+                <div class="letter">E</div><audio hidden id="e" src="mp3/e (1).mp3"></audio>
+                <div class="letter">F</div><audio hidden id="f" src="mp3/f (1).mp3"></audio>
+                <div class="letter">G</div><audio hidden id="g" src="mp3/g (1).mp3"></audio>
+                <div class="letter">H</div><audio hidden id="h" src="mp3/h (1).mp3"></audio>
+                <div class="letter">I</div><audio hidden id="i" src="mp3/i (1).mp3"></audio>
+                <div class="letter">J</div><audio hidden id="j" src="mp3/j (1).mp3"></audio>
+                <div class="letter">K</div><audio hidden id="k" src="mp3/k (1).mp3"></audio>
+                <div class="letter">L</div><audio hidden id="l" src="mp3/l (1).mp3"></audio>
+                <div class="letter">M</div><audio hidden id="m" src="mp3/m (1).mp3"></audio>
+                <div class="letter">N</div><audio hidden id="n" src="mp3/n (1).mp3"></audio>
+                <div class="letter">O</div><audio hidden id="o" src="mp3/o (1).mp3"></audio>
+                <div class="letter">P</div><audio hidden id="p" src="mp3/p (1).mp3"></audio>
+                <div class="letter">Q</div><audio hidden id="q" src="mp3/q (1).mp3"></audio>
+                <div class="letter">R</div><audio hidden id="r" src="mp3/r (1).mp3"></audio>
+                <div class="letter">S</div><audio hidden id="s" src="mp3/s (1).mp3"></audio>
+                <div class="letter">T</div><audio hidden id="t" src="mp3/t (1).mp3"></audio>
+                <div class="letter">U</div><audio hidden id="u" src="mp3/u (1).mp3"></audio>
+                <div class="letter">V</div><audio hidden id="v" src="mp3/v (1).mp3"></audio>
+                <div class="letter">W</div><audio hidden id="w" src="mp3/w (1).mp3"></audio>
+                <div class="letter">X</div><audio hidden id="x" src="mp3/x (1).mp3"></audio>
+                <div class="letter">Y</div><audio hidden id="y" src="mp3/y (1).mp3"></audio>
+                <div class="letter">Z</div><audio hidden id="z" src="mp3/z (1).mp3"></audio>
+            </div>
+        </div>
+        <div id="numbers" class="page">
+            <div class="numbers-container">
+                <div class="number">1</div><audio hidden id="1" src="mp3/1.wav"></audio>
+                <div class="number">2</div><audio hidden id="2" src="mp3/2.wav"></audio>
+                <div class="number">3</div><audio hidden id="3" src="mp3/3.wav"></audio>
+                <div class="number">4</div><audio hidden id="4" src="mp3/4.wav"></audio>
+                <div class="number">5</div><audio hidden id="5" src="mp3/5.wav"></audio>
+                <div class="number">6</div><audio hidden id="6" src="mp3/6.wav"></audio>
+                <div class="number">7</div><audio hidden id="7" src="mp3/7.wav"></audio>
+                <div class="number">8</div><audio hidden id="8" src="mp3/8.wav"></audio>
+                <div class="number">9</div><audio hidden id="9" src="mp3/9.wav"></audio>
+                <div class="number">10</div><audio hidden id="10" src="mp3/10.wav"></audio>
+                <div class="number">11</div><audio hidden id="11" src="mp3/11.wav"></audio>
+                <div class="number">12</div><audio hidden id="12" src="mp3/12.wav"></audio>
+                <div class="number">13</div><audio hidden id="13" src="mp3/13.wav"></audio>
+                <div class="number">14</div><audio hidden id="14" src="mp3/14.wav"></audio>
+                <div class="number">15</div><audio hidden id="15" src="mp3/15.wav"></audio>
+                <div class="number">16</div><audio hidden id="16" src="mp3/16.wav"></audio>
+                <div class="number">17</div><audio hidden id="17" src="mp3/17.wav"></audio>
+                <div class="number">18</div><audio hidden id="18" src="mp3/18.wav"></audio>
+                <div class="number">19</div><audio hidden id="19" src="mp3/19.wav"></audio>
+                <div class="number">20</div><audio hidden id="20" src="mp3/20.wav"></audio>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="cfg-proj.js" async defer></script>
+</body>
+
+</html>
