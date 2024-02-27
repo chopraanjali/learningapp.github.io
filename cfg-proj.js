@@ -1,6 +1,6 @@
 // Function to mute and unmute the audio for a better user experience
-window.onload = function() {
-  navigateTo('landing');
+window.onload = function () {
+  navigateTo("landing");
 };
 
 function toggleMute() {
@@ -66,8 +66,11 @@ lettersArray.forEach(hoverAction);
 var numbersArray = Array.from(numbers);
 numbersArray.forEach(hoverAction);
 
-function handleKeyPress() {
+const saveButton = document.getElementById("save");
+saveButton.addEventListener("click", handleKeyPress);
 
+function handleKeyPress(event) {
+  event.preventDefault();
   //const pages = Array.from(document.body.querySelectorAll(".page"));
 
   var textInput = document.getElementById("textInput");
@@ -75,23 +78,22 @@ function handleKeyPress() {
 
   const welcome = document.getElementById("welcome");
 
-  welcome.innerText  = "Welcome " + username + "!";
+  welcome.innerText = "Welcome, " + username + "!";
   const saveButton = document.getElementById("save");
-  saveButton.display="none";
-
+  saveButton.display = "none";
 }
 
 // Function to navigate between pages
 function navigateTo(pageId) {
   // Hide all pages
-  const pages = document.querySelectorAll('.page');
-  pages.forEach(page => {
-      page.classList.remove('display');
+  const pages = document.querySelectorAll(".page");
+  pages.forEach((page) => {
+    page.classList.remove("display");
   });
 
   // Show the target page
   const targetPage = document.getElementById(pageId);
   if (targetPage) {
-      targetPage.classList.add('display');
+    targetPage.classList.add("display");
   }
 }
