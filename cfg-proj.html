@@ -10,13 +10,13 @@
 
 <body>
     <div id="landing" class="page">
-        <h1>Welcome, Kids!</h1>
-        <!-- <div class="user-form">
-            <form onchange="saveUserInput()" id="user-form">
-                <input type="text" name="username" id="username" placeholder="Name">
-                
+        <h1 id="welcome">Welcome, Kids!</h1>
+        <div class="user-form">
+            <form id="user-form">
+                <input type="text" name="username" id="textInput" placeholder="Name">
+                <button class="btn button-19" id="save" onclick="handleKeyPress()">Save</button>
             </form>
-        </div> -->
+        </div>
         <div class="nav age-group-nav">
             <a href="#baby"><button onclick="navigateTo('baby')" class="btn button-19 age-group group-baby">
                0-3<i class="btn-icon fa-solid fa-baby"></i>
