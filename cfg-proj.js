@@ -1,7 +1,7 @@
 // Function to mute and unmute the audio for a better user experience
-window.onload = function () {
-  navigateTo("landing");
-};
+// window.onload = function () {
+//   navigateTo("landing");
+// };
 
 function toggleMute() {
   let sounds = document.querySelectorAll("audio");
@@ -79,21 +79,19 @@ function handleKeyPress(event) {
   const welcome = document.getElementById("welcome");
 
   welcome.innerText = "Welcome, " + username + "!";
-  const saveButton = document.getElementById("save");
-  saveButton.display = "none";
 }
 
 // Function to navigate between pages
-function navigateTo(pageId) {
-  // Hide all pages
-  const pages = document.querySelectorAll(".page");
-  pages.forEach((page) => {
-    page.classList.remove("display");
-  });
+// function navigateTo(pageId) {
+//   // Hide all pages
+//   const pages = document.querySelectorAll(".page");
+//   pages.forEach((page) => {
+//     page.classList.remove("display");
+//   });
 
-  // Show the target page
-  const targetPage = document.getElementById(pageId);
-  if (targetPage) {
-    targetPage.classList.add("display");
-  }
-}
+//   // Show the target page
+//   const targetPage = document.getElementById(pageId);
+//   if (targetPage) {
+//     targetPage.classList.add("display");
+//   }
+// }

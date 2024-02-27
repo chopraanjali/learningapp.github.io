@@ -348,10 +348,10 @@ div>.page {
   scroll-snap-align: start;
 }
 
-.page {
+/* .page {
   display: none;
 }
 
 .page.display {
   display: block;
-}
+} */
